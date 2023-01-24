@@ -1,0 +1,42 @@
+{
+    "name": "phptailors/singleton-testing",
+    "description": "Reusable singleton testing code",
+    "type": "library",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Paweł Tomulik",
+            "email": "pawel@tomulik.pl"
+        }
+    ],
+    "support": {
+      "issues": "https://github.com/phptailors/libraries/issues",
+      "source": "https://github.com/phptailors/libraries"
+    },
+    "conflict": {
+        "nikic/php-parser": "< 4.13.2"
+    },
+    "require": {
+        "php": "^8",
+        "phptailors/phpunit-methods": "dev-master",
+        "phptailors/singleton-interface": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10 || ^10"
+    },
+    "autoload": {
+      "psr-4" : {
+        "Tailors\\Testing\\Lib\\Singleton\\" : "testing/"
+      },
+      "exclude-from-classmap": [
+        "/tests/",
+        "/testing/"
+      ]
+    },
+    "autoload-dev": {
+      "psr-4" : {
+        "Tailors\\Tests\\Testing\\Lib\\Singleton\\" : "tests/testing/"
+      }
+    }
+}
