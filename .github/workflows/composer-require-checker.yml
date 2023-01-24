@@ -1,0 +1,12 @@
+---
+name: Composer Require Checker
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  composer_require_checker:
+    name: Composer Dependencies
+    uses: phptailors/interface-workflows/.github/workflows/composer-require-checker.yml@master
+

@@ -1,0 +1,13 @@
+{
+  "symbol-whitelist" : [
+      "PHPUnit\\Framework\\Constraint\\Constraint",
+      "PHPUnit\\Framework\\Constraint\\LogicalNot"
+  ],
+  "php-core-extensions" : [
+      "Core",
+      "standard",
+      "Reflection"
+  ],
+  "scan-files" : [
+  ]
+}

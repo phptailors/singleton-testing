@@ -1,0 +1,12 @@
+---
+name: Psalm
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  psalm:
+    name: Psalm
+    uses: phptailors/interface-workflows/.github/workflows/psalm.yml@master
+

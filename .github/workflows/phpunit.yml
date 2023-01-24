@@ -1,0 +1,12 @@
+---
+name: PHPUnit
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  phpunit:
+    name: Unit Tests
+    uses: phptailors/interface-workflows/.github/workflows/phpunit.yml@master
+

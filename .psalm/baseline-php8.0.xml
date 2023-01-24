@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="5.26.1@d747f6500b38ac4f7dfc5edbcae6e4b637d7add0">
+  <file src="src/AssertIsSingletonTrait.php">
+    <MissingThrowsDocblock>
+      <code><![CDATA[self::assertEquals($expect, $exception->getMessage(), $message)]]></code>
+      <code><![CDATA[self::assertHasMethod('private function __construct', $class)]]></code>
+      <code><![CDATA[self::assertHasMethod(sprintf('public static function %s', $getInstance), $class)]]></code>
+      <code><![CDATA[self::assertInstanceOf($class, $instance, $message)]]></code>
+      <code><![CDATA[self::assertIsCallable($function)]]></code>
+      <code><![CDATA[self::assertIsObject($instance)]]></code>
+      <code><![CDATA[self::assertSame($val1, $val2, $message)]]></code>
+      <code><![CDATA[self::assertTrue(class_exists($string), $message)]]></code>
+      <code><![CDATA[static::assertThat($actual, self::logicalNot(self::isCloneable()), $message)]]></code>
+    </MissingThrowsDocblock>
+  </file>
+</files>

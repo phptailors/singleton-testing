@@ -1,0 +1,53 @@
+{
+    "name": "phptailors/singleton-testing",
+    "description": "Singleton testing helpers",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Paweł Tomulik",
+            "email": "pawel@tomulik.pl"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/phptailors/libraries/issues",
+        "source": "https://github.com/phptailors/libraries"
+    },
+    "require": {
+        "php": ">=8.0",
+        "phptailors/phpunit-methods": ">=1.0.0",
+        "phptailors/singleton-interface": "dev-master"
+    },
+    "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.8"
+    },
+    "extra": {
+        "bamarni-bin": {
+            "bin-links": false,
+            "forward-command": false,
+            "target-directory": "vendor-bin"
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true
+        }
+    },
+    "autoload": {
+        "psr-4" : {
+            "Tailors\\Testing\\Lib\\Singleton\\" : "src/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4" : {
+            "Tailors\\Tests\\Testing\\Lib\\Singleton\\" : "tests/src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

@@ -1,0 +1,12 @@
+---
+name: BC Check
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  bc_check:
+    name: BC Check
+    uses: phptailors/interface-workflows/.github/workflows/backward-compatibility-check.yml@master
+

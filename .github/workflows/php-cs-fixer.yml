@@ -1,0 +1,12 @@
+---
+name: PHP CS Fixer
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  php_cs_fixer:
+    name: PHP CS Fixer
+    uses: phptailors/interface-workflows/.github/workflows/php-cs-fixer.yml@master
+
