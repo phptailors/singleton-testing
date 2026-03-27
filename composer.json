@@ -15,7 +15,7 @@
     "require": {
         "php": ">=8.0",
         "phptailors/phpunit-methods": ">=1.0.0",
-        "phptailors/singleton-interface": "dev-master"
+        "phptailors/singleton-interface": "^1.0"
     },
     "require-dev": {
         "bamarni/composer-bin-plugin": "^1.8"
