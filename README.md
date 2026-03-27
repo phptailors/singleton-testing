@@ -44,12 +44,12 @@ The following tests are performed by ``assertIsSingleton($class)``:
 
 1. Assert that the the provided string ``$class`` is a class.
 2. Assert that ``$class`` has private constructor.
-3. Assert taht ``$class`` has public static method ``getInstance()``.
+3. Assert that ``$class`` has public static method ``getInstance()``.
 4. Assert that ``$class::getInstance()`` is callable.
 5. Assert that ``$class::getInstance()`` returns an instance of ``$class``.
 6. Assert that ``$class::getInstance()`` is idempotent.
 7. Assert that ``$class`` is not cloneable.
-8. Assert taht it throws [Tailors\Lib\Singleton\SingletonException][SingletonException] on [unserialize()][unserialize].
+8. Assert that it throws [Tailors\Lib\Singleton\SingletonException][SingletonException] on [unserialize()][unserialize].
 
 The name of the ``getInstance()`` method may be customized, for example:
 ```php
