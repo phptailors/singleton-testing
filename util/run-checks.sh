@@ -64,11 +64,11 @@ pushd $top > /dev/null 2>&1
     check_result $?;
     echo "";
 
-    ## echo "";
-    ## info "runnig roave-backward-compatibility-check"
-    ## execute $php vendor-bin/backward-compatibility-check/vendor/bin/roave-backward-compatibility-check
-    ## check_result $?
-    ### echo "";
+    echo "";
+    info "runnig roave-backward-compatibility-check"
+    execute $php vendor-bin/backward-compatibility-check/vendor/bin/roave-backward-compatibility-check
+    check_result $?
+    echo "";
 popd >/dev/null 2>&1
 
 if [[ $failed -eq 1 ]]; then
